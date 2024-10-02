@@ -1,0 +1,1544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB294F47-97A0-479A-8B22-AE887346CC15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalSys</RootNamespace>
+    <AssemblyName>HospitalSys</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appointments\AddNewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\AddNewAppointment.Designer.cs">
+      <DependentUpon>AddNewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\AddNewPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\AddNewPrescription.Designer.cs">
+      <DependentUpon>AddNewPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\AppointmentRecordInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\AppointmentRecordInfo.Designer.cs">
+      <DependentUpon>AppointmentRecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ctrAddNewAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments\ctrAddNewAppointment.Designer.cs">
+      <DependentUpon>ctrAddNewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ctrAddNewPrescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments\ctrAddNewPrescription.Designer.cs">
+      <DependentUpon>ctrAddNewPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ctrAppoinmentInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments\ctrAppoinmentInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrAppoinmentInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ctrAppointmentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments\ctrAppointmentInfo.Designer.cs">
+      <DependentUpon>ctrAppointmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ctrUpdateAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments\ctrUpdateAppointment.Designer.cs">
+      <DependentUpon>ctrUpdateAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\FindAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\FindAppointment.Designer.cs">
+      <DependentUpon>FindAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ListOfAllActiveAppointmentForDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\ListOfAllActiveAppointmentForDoctor.Designer.cs">
+      <DependentUpon>ListOfAllActiveAppointmentForDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ListOfAllDoctorsWhosehaveARoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\ListOfAllDoctorsWhosehaveARoom.Designer.cs">
+      <DependentUpon>ListOfAllDoctorsWhosehaveARoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\ListOfAppoointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\ListOfAppoointments.Designer.cs">
+      <DependentUpon>ListOfAppoointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\UpdateAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\UpdateAppointment.Designer.cs">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\UpdateAppointmentRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\UpdateAppointmentRecord.Designer.cs">
+      <DependentUpon>UpdateAppointmentRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\AddUpdateDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\AddUpdateDoctor.Designer.cs">
+      <DependentUpon>AddUpdateDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\AllAvailableDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\AllAvailableDoctor.Designer.cs">
+      <DependentUpon>AllAvailableDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\ctrAddUpdateDoctorcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doctors\ctrAddUpdateDoctorcs.Designer.cs">
+      <DependentUpon>ctrAddUpdateDoctorcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\ctrDoctorInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doctors\ctrDoctorInfo.Designer.cs">
+      <DependentUpon>ctrDoctorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\ctrDoctorInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doctors\ctrDoctorInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrDoctorInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\DoctorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\DoctorInfo.Designer.cs">
+      <DependentUpon>DoctorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\FindDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\FindDoctor.Designer.cs">
+      <DependentUpon>FindDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors\ListOfDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\ListOfDoctors.Designer.cs">
+      <DependentUpon>ListOfDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices\ListOfInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices\ListOfInvoices.Designer.cs">
+      <DependentUpon>ListOfInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices\PayInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices\PayInvoice.Designer.cs">
+      <DependentUpon>PayInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\AddResultForTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\AddResultForTest.Designer.cs">
+      <DependentUpon>AddResultForTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\AllTestsForPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\AllTestsForPatient.Designer.cs">
+      <DependentUpon>AllTestsForPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\BookANewLapTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\BookANewLapTest.Designer.cs">
+      <DependentUpon>BookANewLapTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\ctrAddTheResultOfTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabTests\ctrAddTheResultOfTest.Designer.cs">
+      <DependentUpon>ctrAddTheResultOfTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\ctrBookANewLabTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabTests\ctrBookANewLabTest.Designer.cs">
+      <DependentUpon>ctrBookANewLabTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\ctrTestLapInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabTests\ctrTestLapInfo.Designer.cs">
+      <DependentUpon>ctrTestLapInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\ctrTestLapInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabTests\ctrTestLapInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrTestLapInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\FindLapTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\FindLapTest.Designer.cs">
+      <DependentUpon>FindLapTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\ListOfLapTestsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\ListOfLapTestsHistory.Designer.cs">
+      <DependentUpon>ListOfLapTestsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests\TestInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabTests\TestInfo.Designer.cs">
+      <DependentUpon>TestInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loging\clsGlobal.cs" />
+    <Compile Include="Loging\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loging\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loging\LoginRegistry.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\AddNewManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\AddNewManager.Designer.cs">
+      <DependentUpon>AddNewManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ManagersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\ManagersList.Designer.cs">
+      <DependentUpon>ManagersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\AddNewMedicalQuantityInStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\AddNewMedicalQuantityInStorage.Designer.cs">
+      <DependentUpon>AddNewMedicalQuantityInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\AddUpdateMedicalInSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\AddUpdateMedicalInSys.Designer.cs">
+      <DependentUpon>AddUpdateMedicalInSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\AllQuantityRecordsForMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\AllQuantityRecordsForMedical.Designer.cs">
+      <DependentUpon>AllQuantityRecordsForMedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ChangeMedicalQuantityPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\ChangeMedicalQuantityPrice.Designer.cs">
+      <DependentUpon>ChangeMedicalQuantityPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ctrAddNewMedicalsInStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Medicals\ctrAddNewMedicalsInStorage.Designer.cs">
+      <DependentUpon>ctrAddNewMedicalsInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ctrAddUpdateMedicalTypeInSys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Medicals\ctrAddUpdateMedicalTypeInSys.Designer.cs">
+      <DependentUpon>ctrAddUpdateMedicalTypeInSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ctrEditMedicalRecordInStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Medicals\ctrEditMedicalRecordInStorage.Designer.cs">
+      <DependentUpon>ctrEditMedicalRecordInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ctrFindMedicalRecordInStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Medicals\ctrFindMedicalRecordInStorage.Designer.cs">
+      <DependentUpon>ctrFindMedicalRecordInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ctrMedicalRecordInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Medicals\ctrMedicalRecordInfo.Designer.cs">
+      <DependentUpon>ctrMedicalRecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FindMedicalRecordInStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FindMedicalRecordInStorage.Designer.cs">
+      <DependentUpon>FindMedicalRecordInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ListOfMedicalsInStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\ListOfMedicalsInStorage.Designer.cs">
+      <DependentUpon>ListOfMedicalsInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\ListOfMedicalTypeInSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\ListOfMedicalTypeInSys.Designer.cs">
+      <DependentUpon>ListOfMedicalTypeInSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\MedicalRecordInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\MedicalRecordInfo.Designer.cs">
+      <DependentUpon>MedicalRecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\UpdateMedicalInStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\UpdateMedicalInStorage.Designer.cs">
+      <DependentUpon>UpdateMedicalInStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\AddUpdateNurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurses\AddUpdateNurse.Designer.cs">
+      <DependentUpon>AddUpdateNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\ctrAddUpdateNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nurses\ctrAddUpdateNurse.Designer.cs">
+      <DependentUpon>ctrAddUpdateNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\ctrNurseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nurses\ctrNurseInfo.Designer.cs">
+      <DependentUpon>ctrNurseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\ctrNurseInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nurses\ctrNurseInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrNurseInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\FindNurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurses\FindNurse.Designer.cs">
+      <DependentUpon>FindNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\ListOfNurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurses\ListOfNurses.Designer.cs">
+      <DependentUpon>ListOfNurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurses\NurseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurses\NurseInfo.Designer.cs">
+      <DependentUpon>NurseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="OtherEmployee\AddUpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\AddUpdateEmployee.Designer.cs">
+      <DependentUpon>AddUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrAddUpdateEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrAddUpdateEmployee.Designer.cs">
+      <DependentUpon>ctrAddUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrEmployeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrEmployeInfo.Designer.cs">
+      <DependentUpon>ctrEmployeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrFindEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\ctrFindEmployee.Designer.cs">
+      <DependentUpon>ctrFindEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\EmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\EmployeeInfo.Designer.cs">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEmployee\FindEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherEmployee\FindEmployee.Designer.cs">
+      <DependentUpon>FindEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\AddNewPatientRecordHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\AddNewPatientRecordHS.Designer.cs">
+      <DependentUpon>AddNewPatientRecordHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrAddNewPatientRecordHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrAddNewPatientRecordHS.Designer.cs">
+      <DependentUpon>ctrAddNewPatientRecordHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrFindTheMostRecentlyRecordForPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrFindTheMostRecentlyRecordForPatient.Designer.cs">
+      <DependentUpon>ctrFindTheMostRecentlyRecordForPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrRecordInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrRecordInfo.Designer.cs">
+      <DependentUpon>ctrRecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrUpdatePatientRecordHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\ctrUpdatePatientRecordHS.Designer.cs">
+      <DependentUpon>ctrUpdatePatientRecordHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\FindRecentlyRecordForPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\FindRecentlyRecordForPatient.Designer.cs">
+      <DependentUpon>FindRecentlyRecordForPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\PatientsRecordHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\PatientsRecordHistory.Designer.cs">
+      <DependentUpon>PatientsRecordHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\PatientsRecordsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\PatientsRecordsList.Designer.cs">
+      <DependentUpon>PatientsRecordsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\RecordInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\RecordInfo.Designer.cs">
+      <DependentUpon>RecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PateintsRecords\UpdatePatientRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PateintsRecords\UpdatePatientRecord.Designer.cs">
+      <DependentUpon>UpdatePatientRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\AddUpdate Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\AddUpdate Patient.Designer.cs">
+      <DependentUpon>AddUpdate Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\ctrAddUpdatePatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Patients\ctrAddUpdatePatient.Designer.cs">
+      <DependentUpon>ctrAddUpdatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\ctrPatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Patients\ctrPatientInfo.Designer.cs">
+      <DependentUpon>ctrPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\ctrPatientInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Patients\ctrPatientInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrPatientInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\FindPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\FindPatient.Designer.cs">
+      <DependentUpon>FindPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\ListOfPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\ListOfPatients.Designer.cs">
+      <DependentUpon>ListOfPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients\PatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\PatientInfo.Designer.cs">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\AddNewPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\AddNewPayment.Designer.cs">
+      <DependentUpon>AddNewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\ctrAddNewPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payments\ctrAddNewPayment.Designer.cs">
+      <DependentUpon>ctrAddNewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\DischargPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\DischargPay.Designer.cs">
+      <DependentUpon>DischargPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\ListOfAllPaymentTransactons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\ListOfAllPaymentTransactons.Designer.cs">
+      <DependentUpon>ListOfAllPaymentTransactons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\PaymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\PaymentInfo.Designer.cs">
+      <DependentUpon>PaymentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuiqPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuiqPayment.designer.cs">
+      <DependentUpon>QuiqPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\ListOfHSRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\ListOfHSRooms.Designer.cs">
+      <DependentUpon>ListOfHSRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms\ListOfWareHouseRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\ListOfWareHouseRooms.Designer.cs">
+      <DependentUpon>ListOfWareHouseRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\AddNewSurgeryProcedureAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\AddNewSurgeryProcedureAppointment.Designer.cs">
+      <DependentUpon>AddNewSurgeryProcedureAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\AllSurgeryProcedureForPaients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\AllSurgeryProcedureForPaients.Designer.cs">
+      <DependentUpon>AllSurgeryProcedureForPaients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ctrSurgeryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ctrSurgeryInfo.Designer.cs">
+      <DependentUpon>ctrSurgeryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ctrSurgeryInfoWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ctrSurgeryInfoWithFilter.Designer.cs">
+      <DependentUpon>ctrSurgeryInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\FindSurgeryProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\FindSurgeryProcedure.Designer.cs">
+      <DependentUpon>FindSurgeryProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfAllNurses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfAllNurses.Designer.cs">
+      <DependentUpon>ListOfAllNurses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfAllSurgeryDoctorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfAllSurgeryDoctorcs.Designer.cs">
+      <DependentUpon>ListOfAllSurgeryDoctorcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfSurgeryProcedures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\ListOfSurgeryProcedures.Designer.cs">
+      <DependentUpon>ListOfSurgeryProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\PaySurgeryProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\PaySurgeryProcedure.Designer.cs">
+      <DependentUpon>PaySurgeryProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurgeryProcedures\SurgeryProcedureInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurgeryProcedures\SurgeryProcedureInfo.Designer.cs">
+      <DependentUpon>SurgeryProcedureInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\AddNewUser.Designer.cs">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrAddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrAddUser.Designer.cs">
+      <DependentUpon>ctrAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrUpdateUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrUpdateUser.Designer.cs">
+      <DependentUpon>ctrUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrUserInfo.Designer.cs">
+      <DependentUpon>ctrUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrUserInfoByFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrUserInfoByFilter.Designer.cs">
+      <DependentUpon>ctrUserInfoByFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FindUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FindUser.Designer.cs">
+      <DependentUpon>FindUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ListOfUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\ListOfUsers.Designer.cs">
+      <DependentUpon>ListOfUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UpdatePaswords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UpdatePaswords.Designer.cs">
+      <DependentUpon>UpdatePaswords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UpdateUser.Designer.cs">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Appointments\AddNewAppointment.resx">
+      <DependentUpon>AddNewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\AddNewPrescription.resx">
+      <DependentUpon>AddNewPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\AppointmentRecordInfo.resx">
+      <DependentUpon>AppointmentRecordInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ctrAddNewAppointment.resx">
+      <DependentUpon>ctrAddNewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ctrAddNewPrescription.resx">
+      <DependentUpon>ctrAddNewPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ctrAppoinmentInfoWithFilter.resx">
+      <DependentUpon>ctrAppoinmentInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ctrAppointmentInfo.resx">
+      <DependentUpon>ctrAppointmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ctrUpdateAppointment.resx">
+      <DependentUpon>ctrUpdateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\FindAppointment.resx">
+      <DependentUpon>FindAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ListOfAllActiveAppointmentForDoctor.resx">
+      <DependentUpon>ListOfAllActiveAppointmentForDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ListOfAllDoctorsWhosehaveARoom.resx">
+      <DependentUpon>ListOfAllDoctorsWhosehaveARoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\ListOfAppoointments.resx">
+      <DependentUpon>ListOfAppoointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\UpdateAppointment.resx">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\UpdateAppointmentRecord.resx">
+      <DependentUpon>UpdateAppointmentRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\AddUpdateDoctor.resx">
+      <DependentUpon>AddUpdateDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\AllAvailableDoctor.resx">
+      <DependentUpon>AllAvailableDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\ctrAddUpdateDoctorcs.resx">
+      <DependentUpon>ctrAddUpdateDoctorcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\ctrDoctorInfo.resx">
+      <DependentUpon>ctrDoctorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\ctrDoctorInfoWithFilter.resx">
+      <DependentUpon>ctrDoctorInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\DoctorInfo.resx">
+      <DependentUpon>DoctorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\FindDoctor.resx">
+      <DependentUpon>FindDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors\ListOfDoctors.resx">
+      <DependentUpon>ListOfDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\ListOfInvoices.resx">
+      <DependentUpon>ListOfInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\PayInvoice.resx">
+      <DependentUpon>PayInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\AddResultForTest.resx">
+      <DependentUpon>AddResultForTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\AllTestsForPatient.resx">
+      <DependentUpon>AllTestsForPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\BookANewLapTest.resx">
+      <DependentUpon>BookANewLapTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\ctrAddTheResultOfTest.resx">
+      <DependentUpon>ctrAddTheResultOfTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\ctrBookANewLabTest.resx">
+      <DependentUpon>ctrBookANewLabTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\ctrTestLapInfo.resx">
+      <DependentUpon>ctrTestLapInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\ctrTestLapInfoWithFilter.resx">
+      <DependentUpon>ctrTestLapInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\FindLapTest.resx">
+      <DependentUpon>FindLapTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\ListOfLapTestsHistory.resx">
+      <DependentUpon>ListOfLapTestsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabTests\TestInfo.resx">
+      <DependentUpon>TestInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loging\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\AddNewManager.resx">
+      <DependentUpon>AddNewManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\ManagersList.resx">
+      <DependentUpon>ManagersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\AddNewMedicalQuantityInStorage.resx">
+      <DependentUpon>AddNewMedicalQuantityInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\AddUpdateMedicalInSys.resx">
+      <DependentUpon>AddUpdateMedicalInSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\AllQuantityRecordsForMedical.resx">
+      <DependentUpon>AllQuantityRecordsForMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ChangeMedicalQuantityPrice.resx">
+      <DependentUpon>ChangeMedicalQuantityPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ctrAddNewMedicalsInStorage.resx">
+      <DependentUpon>ctrAddNewMedicalsInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ctrAddUpdateMedicalTypeInSys.resx">
+      <DependentUpon>ctrAddUpdateMedicalTypeInSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ctrEditMedicalRecordInStorage.resx">
+      <DependentUpon>ctrEditMedicalRecordInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ctrFindMedicalRecordInStorage.resx">
+      <DependentUpon>ctrFindMedicalRecordInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ctrMedicalRecordInfo.resx">
+      <DependentUpon>ctrMedicalRecordInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FindMedicalRecordInStorage.resx">
+      <DependentUpon>FindMedicalRecordInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ListOfMedicalsInStorage.resx">
+      <DependentUpon>ListOfMedicalsInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\ListOfMedicalTypeInSys.resx">
+      <DependentUpon>ListOfMedicalTypeInSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\MedicalRecordInfo.resx">
+      <DependentUpon>MedicalRecordInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\UpdateMedicalInStorage.resx">
+      <DependentUpon>UpdateMedicalInStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\AddUpdateNurse.resx">
+      <DependentUpon>AddUpdateNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\ctrAddUpdateNurse.resx">
+      <DependentUpon>ctrAddUpdateNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\ctrNurseInfo.resx">
+      <DependentUpon>ctrNurseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\ctrNurseInfoWithFilter.resx">
+      <DependentUpon>ctrNurseInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\FindNurse.resx">
+      <DependentUpon>FindNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\ListOfNurses.resx">
+      <DependentUpon>ListOfNurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurses\NurseInfo.resx">
+      <DependentUpon>NurseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\HospitalProject.Appointments.AddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HospitalProject.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\HospitalProject.UserControl1.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.AddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.AddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.AppointmentRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ctrAddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ctrAddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ctrAppoinmentInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ctrAppointmentInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ctrUpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.FindAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ListOfAllActiveAppointmentForDoctor.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ListOfAllDoctorsWhosehaveARoom.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.ListOfAppoointments.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.UpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Appointments.UpdateAppointmentRecord.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.AddUpdateDoctor.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.AllAvailableDoctor.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.ctrAddUpdateDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.ctrDoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.ctrDoctorInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.DoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.FindDoctor.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Doctors.ListOfDoctors.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.AddResultForTest.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.AllTestsForPatient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.BookANewLapTest.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.ctrAddTheResultOfTest.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.ctrBookANewLabTest.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.ctrTestLapInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.ctrTestLapInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.FindLapTest.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.ListOfLapTestsHistory.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.LabTests.TestInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.ListOfUsers.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Loging.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.MainForm.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.AddNewMedicalQuantityInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.AddUpdateMedicalInSys.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.AllQuantityRecordsForMedical.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ChangeMedicalQuantityPrice.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ctrAddNewMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ctrAddUpdateMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ctrEditMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ctrFindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ctrMedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.FindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ListOfMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.ListOfMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.MedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Medicals.UpdateMedicalInStorage.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.AddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.ctrAddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.ctrNurseInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.ctrNurseInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.FindNurse.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.ListOfNurses.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Nurses.NurseInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.AddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.ctrAddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.ctrEmployeInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.ctrFindEmployee.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.EmployeeInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.EmployeeList.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.OtherEmployee.FindEmployee.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.AddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.ctrAddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.ctrFindTheMostRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.ctrRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.ctrUpdatePatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.FindRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.PatientsRecordHistory.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.RecordInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PateintsRecords.UpdatePatientRecord.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.AddUpdate_Patient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.ctrAddUpdatePatient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.ctrPatientInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.ctrPatientInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.FindPatient.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.ListOfPatients.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Patients.PatientInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.PatientsRecordsList.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Payments.ctrAddNewPayment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Payments.ListOfAllPaymentTransactons.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.QuiqPayment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.AddNewSurgeryProcedureAppointment.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.AllSurgeryProcedureForPaients.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.ctrSurgeryInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.ctrSurgeryInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.FindSurgeryProcedure.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.ListOfAllNurses.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.ListOfAllSurgeryDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.ListOfSurgeryProcedures.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.SurgeryProcedures.SurgeryProcedureInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.AddNewUser.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.ChangePassword.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.ctrAddUser.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.ctrUpdateUser.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.ctrUserInfo.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.ctrUserInfoByFilter.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.FindUser.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.UpdatePaswords.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.UpdateUser.resources" />
+    <EmbeddedResource Include="obj\Debug\HS_System.Users.UserInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.AddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.AddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.AppointmentRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ctrAddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ctrAddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ctrAppoinmentInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ctrAppointmentInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ctrUpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.FindAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ListOfAllActiveAppointmentForDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ListOfAllDoctorsWhosehaveARoom.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.ListOfAppoointments.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Appointments.UpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.AddUpdateDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.AllAvailableDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.ctrAddUpdateDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.ctrDoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.ctrDoctorInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.DoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.FindDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Doctors.ListOfDoctors.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.AddResultForTest.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.AllTestsForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.BookANewLapTest.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.ctrAddTheResultOfTest.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.ctrBookANewLabTest.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.ctrTestLapInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.ctrTestLapInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.FindLapTest.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.ListOfLapTestsHistory.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.LabTests.TestInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.ListOfUsers.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Loging.Login.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.MainForm.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.AddNewMedicalQuantityInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.AddUpdateMedicalInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.AllQuantityRecordsForMedical.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ChangeMedicalQuantityPrice.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ctrAddNewMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ctrAddUpdateMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ctrEditMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ctrFindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ctrMedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.FindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ListOfMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.ListOfMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.MedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Medicals.UpdateMedicalInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.AddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.ctrAddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.ctrNurseInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.ctrNurseInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.FindNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.ListOfNurses.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Nurses.NurseInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.AddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.ctrAddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.ctrEmployeInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.ctrFindEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.EmployeeInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.EmployeeList.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.OtherEmployee.FindEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.AddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.ctrAddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.ctrFindTheMostRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.ctrRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.ctrUpdatePatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.FindRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.PatientsRecordHistory.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.RecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PateintsRecords.UpdatePatientRecord.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.AddUpdate_Patient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.ctrAddUpdatePatient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.ctrPatientInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.ctrPatientInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.FindPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.ListOfPatients.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Patients.PatientInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.PatientsRecordsList.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.QuiqPayment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.AddNewSurgeryProcedureAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.AllSurgeryProcedureForPaients.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.ctrSurgeryInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.ctrSurgeryInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.FindSurgeryProcedure.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.ListOfAllNurses.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.ListOfAllSurgeryDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.ListOfSurgeryProcedures.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.SurgeryProcedures.SurgeryProcedureInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.UserControl1.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.AddNewUser.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.ChangePassword.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.ctrAddUser.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.ctrUpdateUser.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.ctrUserInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.ctrUserInfoByFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.FindUser.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.UpdatePaswords.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.UpdateUser.resources" />
+    <EmbeddedResource Include="obj\Release\HospitalProject.Users.UserInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.AddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.AddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.AppointmentRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ctrAddNewAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ctrAddNewPrescription.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ctrAppoinmentInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ctrAppointmentInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ctrUpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.FindAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ListOfAllActiveAppointmentForDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ListOfAllDoctorsWhosehaveARoom.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.ListOfAppoointments.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.UpdateAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Appointments.UpdateAppointmentRecord.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.AddUpdateDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.AllAvailableDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.ctrAddUpdateDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.ctrDoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.ctrDoctorInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.DoctorInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.FindDoctor.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Doctors.ListOfDoctors.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Form1.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.AddResultForTest.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.AllTestsForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.BookANewLapTest.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.ctrAddTheResultOfTest.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.ctrBookANewLabTest.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.ctrTestLapInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.ctrTestLapInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.FindLapTest.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.ListOfLapTestsHistory.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.LabTests.TestInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.ListOfUsers.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Loging.Login.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.MainForm.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.AddNewMedicalQuantityInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.AddUpdateMedicalInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.AllQuantityRecordsForMedical.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ChangeMedicalQuantityPrice.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ctrAddNewMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ctrAddUpdateMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ctrEditMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ctrFindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ctrMedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.FindMedicalRecordInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ListOfMedicalsInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.ListOfMedicalTypeInSys.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.MedicalRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Medicals.UpdateMedicalInStorage.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.AddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.ctrAddUpdateNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.ctrNurseInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.ctrNurseInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.FindNurse.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.ListOfNurses.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Nurses.NurseInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.AddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.ctrAddUpdateEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.ctrEmployeInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.ctrFindEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.EmployeeInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.EmployeeList.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.OtherEmployee.FindEmployee.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.AddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.ctrAddNewPatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.ctrFindTheMostRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.ctrRecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.ctrUpdatePatientRecordHS.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.FindRecentlyRecordForPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.PatientsRecordHistory.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.RecordInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PateintsRecords.UpdatePatientRecord.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.AddUpdate_Patient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.ctrAddUpdatePatient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.ctrPatientInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.ctrPatientInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.FindPatient.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.ListOfPatients.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Patients.PatientInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.PatientsRecordsList.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Payments.ctrAddNewPayment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Payments.ListOfAllPaymentTransactons.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.QuiqPayment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.AddNewSurgeryProcedureAppointment.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.AllSurgeryProcedureForPaients.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.ctrSurgeryInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.ctrSurgeryInfoWithFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.FindSurgeryProcedure.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.ListOfAllNurses.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.ListOfAllSurgeryDoctorcs.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.ListOfSurgeryProcedures.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.SurgeryProcedures.SurgeryProcedureInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.AddNewUser.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.ChangePassword.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.ctrAddUser.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.ctrUpdateUser.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.ctrUserInfo.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.ctrUserInfoByFilter.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.FindUser.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.UpdatePaswords.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.UpdateUser.resources" />
+    <EmbeddedResource Include="obj\Release\HS_System.Users.UserInfo.resources" />
+    <EmbeddedResource Include="OtherEmployee\AddUpdateEmployee.resx">
+      <DependentUpon>AddUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\ctrAddUpdateEmployee.resx">
+      <DependentUpon>ctrAddUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\ctrEmployeInfo.resx">
+      <DependentUpon>ctrEmployeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\ctrFindEmployee.resx">
+      <DependentUpon>ctrFindEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEmployee\FindEmployee.resx">
+      <DependentUpon>FindEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\AddNewPatientRecordHS.resx">
+      <DependentUpon>AddNewPatientRecordHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\ctrAddNewPatientRecordHS.resx">
+      <DependentUpon>ctrAddNewPatientRecordHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\ctrFindTheMostRecentlyRecordForPatient.resx">
+      <DependentUpon>ctrFindTheMostRecentlyRecordForPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\ctrRecordInfo.resx">
+      <DependentUpon>ctrRecordInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\ctrUpdatePatientRecordHS.resx">
+      <DependentUpon>ctrUpdatePatientRecordHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\FindRecentlyRecordForPatient.resx">
+      <DependentUpon>FindRecentlyRecordForPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\PatientsRecordHistory.resx">
+      <DependentUpon>PatientsRecordHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\PatientsRecordsList.resx">
+      <DependentUpon>PatientsRecordsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\RecordInfo.resx">
+      <DependentUpon>RecordInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PateintsRecords\UpdatePatientRecord.resx">
+      <DependentUpon>UpdatePatientRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\AddUpdate Patient.resx">
+      <DependentUpon>AddUpdate Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\ctrAddUpdatePatient.resx">
+      <DependentUpon>ctrAddUpdatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\ctrPatientInfo.resx">
+      <DependentUpon>ctrPatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\ctrPatientInfoWithFilter.resx">
+      <DependentUpon>ctrPatientInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\FindPatient.resx">
+      <DependentUpon>FindPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\ListOfPatients.resx">
+      <DependentUpon>ListOfPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\PatientInfo.resx">
+      <DependentUpon>PatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\AddNewPayment.resx">
+      <DependentUpon>AddNewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\ctrAddNewPayment.resx">
+      <DependentUpon>ctrAddNewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\DischargPay.resx">
+      <DependentUpon>DischargPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\ListOfAllPaymentTransactons.resx">
+      <DependentUpon>ListOfAllPaymentTransactons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\PaymentInfo.resx">
+      <DependentUpon>PaymentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuiqPayment.resx">
+      <DependentUpon>QuiqPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\ListOfHSRooms.resx">
+      <DependentUpon>ListOfHSRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms\ListOfWareHouseRooms.resx">
+      <DependentUpon>ListOfWareHouseRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\AddNewSurgeryProcedureAppointment.resx">
+      <DependentUpon>AddNewSurgeryProcedureAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\AllSurgeryProcedureForPaients.resx">
+      <DependentUpon>AllSurgeryProcedureForPaients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\ctrSurgeryInfo.resx">
+      <DependentUpon>ctrSurgeryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\ctrSurgeryInfoWithFilter.resx">
+      <DependentUpon>ctrSurgeryInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\FindSurgeryProcedure.resx">
+      <DependentUpon>FindSurgeryProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\ListOfAllNurses.resx">
+      <DependentUpon>ListOfAllNurses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\ListOfAllSurgeryDoctorcs.resx">
+      <DependentUpon>ListOfAllSurgeryDoctorcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\ListOfSurgeryProcedures.resx">
+      <DependentUpon>ListOfSurgeryProcedures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\PaySurgeryProcedure.resx">
+      <DependentUpon>PaySurgeryProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurgeryProcedures\SurgeryProcedureInfo.resx">
+      <DependentUpon>SurgeryProcedureInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\AddNewUser.resx">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrAddUser.resx">
+      <DependentUpon>ctrAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrUpdateUser.resx">
+      <DependentUpon>ctrUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrUserInfo.resx">
+      <DependentUpon>ctrUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrUserInfoByFilter.resx">
+      <DependentUpon>ctrUserInfoByFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FindUser.resx">
+      <DependentUpon>FindUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ListOfUsers.resx">
+      <DependentUpon>ListOfUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UpdatePaswords.resx">
+      <DependentUpon>UpdatePaswords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UpdateUser.resx">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\HospitalProject.exe.config" />
+    <None Include="bin\Release\HospitalProject.exe.config" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\HospitalProject.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\HospitalProject.csproj.CopyComplete" />
+    <None Include="obj\Debug\HospitalProject.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\HospitalProject.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\HS System.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\HS System.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\HS System.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\build.force" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\HospitalProject.csproj.AssemblyReference.cache" />
+    <None Include="obj\Release\HospitalProject.csproj.CopyComplete" />
+    <None Include="obj\Release\HospitalProject.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\HospitalProject.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\HS System.csproj.AssemblyReference.cache" />
+    <None Include="obj\Release\HS System.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\HS System.csproj.GenerateResource.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources1.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\HospitalProject.exe" />
+    <Content Include="bin\Debug\HospitalProject.pdb" />
+    <Content Include="bin\Release\clsBusineesLayer.dll" />
+    <Content Include="bin\Release\clsBusineesLayer.pdb" />
+    <Content Include="bin\Release\DataAccessLayer.dll" />
+    <Content Include="bin\Release\DataAccessLayer.pdb" />
+    <Content Include="bin\Release\HospitalProject.exe" />
+    <Content Include="bin\Release\HospitalProject.pdb" />
+    <Content Include="bin\Release\SecurityLayer.dll" />
+    <Content Include="bin\Release\SecurityLayer.pdb" />
+    <Content Include="obj\Debug\HospitalProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\HospitalProject.exe" />
+    <Content Include="obj\Debug\HospitalProject.pdb" />
+    <Content Include="obj\Debug\HS System.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources1.Designer.cs.dll" />
+    <Content Include="obj\Release\HospitalProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\HospitalProject.exe" />
+    <Content Include="obj\Release\HospitalProject.pdb" />
+    <Content Include="obj\Release\HS System.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\add-button.png" />
+    <Content Include="Resources\add-friend.png" />
+    <Content Include="Resources\appointment %281%29.png" />
+    <Content Include="Resources\appointment %281%291.png" />
+    <Content Include="Resources\appointment.png" />
+    <Content Include="Resources\book.png" />
+    <Content Include="Resources\calender %281%29.png" />
+    <Content Include="Resources\calender.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\case.png" />
+    <Content Include="Resources\check-mark.png" />
+    <Content Include="Resources\circular-arrow.png" />
+    <Content Include="Resources\cost.png" />
+    <Content Include="Resources\delete %281%29.png" />
+    <Content Include="Resources\discount.png" />
+    <Content Include="Resources\doctor %281%29.png" />
+    <Content Include="Resources\doctor %282%29.png" />
+    <Content Include="Resources\doctor.png" />
+    <Content Include="Resources\doctor1.png" />
+    <Content Include="Resources\drugs.png" />
+    <Content Include="Resources\employee %282%29.png" />
+    <Content Include="Resources\employment-records.png" />
+    <Content Include="Resources\enter %281%29.png" />
+    <Content Include="Resources\enter.png" />
+    <Content Include="Resources\examination.png" />
+    <Content Include="Resources\eye.png" />
+    <Content Include="Resources\find-my-friend.png" />
+    <Content Include="Resources\find-my-friend1.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\findings.png" />
+    <Content Include="Resources\first-aid-kit.png" />
+    <Content Include="Resources\health-report.png" />
+    <Content Include="Resources\hidden.png" />
+    <Content Include="Resources\hospital.png" />
+    <Content Include="Resources\hospital1.png" />
+    <Content Include="Resources\hospitalisation.png" />
+    <Content Include="Resources\index.png" />
+    <Content Include="Resources\information.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\manager.png" />
+    <None Include="Resources\manager1.png" />
+    <Content Include="Resources\medical %281%29.png" />
+    <Content Include="Resources\medical %282%29.png" />
+    <Content Include="Resources\medical %283%29.png" />
+    <Content Include="Resources\medical-center.png" />
+    <Content Include="Resources\medical-storage.png" />
+    <Content Include="Resources\medical-team.png" />
+    <Content Include="Resources\medical.png" />
+    <Content Include="Resources\medicine %281%29.png" />
+    <Content Include="Resources\medicine.png" />
+    <Content Include="Resources\notepad.png" />
+    <Content Include="Resources\nurse.png" />
+    <Content Include="Resources\nurses.png" />
+    <Content Include="Resources\online-doctor.png" />
+    <Content Include="Resources\online-learning.png" />
+    <Content Include="Resources\operational-system.png" />
+    <Content Include="Resources\pay-card.png" />
+    <Content Include="Resources\personal-information.png" />
+    <Content Include="Resources\plus-sign.png" />
+    <Content Include="Resources\programmer.png" />
+    <Content Include="Resources\psychic-surgery.png" />
+    <Content Include="Resources\recent.png" />
+    <Content Include="Resources\research.png" />
+    <Content Include="Resources\reset-password.png" />
+    <Content Include="Resources\robotic-surgery.png" />
+    <Content Include="Resources\schedule.png" />
+    <Content Include="Resources\search %281%29.png" />
+    <Content Include="Resources\search %282%29.png" />
+    <Content Include="Resources\search-again.png" />
+    <Content Include="Resources\searching.png" />
+    <Content Include="Resources\settings.png" />
+    <Content Include="Resources\storage.png" />
+    <Content Include="Resources\support.png" />
+    <Content Include="Resources\talent-management.png" />
+    <Content Include="Resources\update-list.png" />
+    <Content Include="Resources\updated %281%29.png" />
+    <Content Include="Resources\updated %282%29.png" />
+    <Content Include="Resources\user %286%29.png" />
+    <Content Include="Resources\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clsBusineesLayer\clsBusineesLayer.csproj">
+      <Project>{77e7bea1-ffea-4c1f-ac78-ef7f5b5b3241}</Project>
+      <Name>clsBusineesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+      <Project>{71ddb91d-52bd-4a91-b357-60ab66a2895b}</Project>
+      <Name>SecurityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

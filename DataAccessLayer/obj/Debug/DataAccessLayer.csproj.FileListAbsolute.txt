@@ -1,0 +1,18 @@
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\HS System\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

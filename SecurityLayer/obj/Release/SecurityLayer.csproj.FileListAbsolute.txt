@@ -1,0 +1,6 @@
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\bin\Release\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\bin\Release\SecurityLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Release\SecurityLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Release\SecurityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Release\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Release\SecurityLayer.pdb

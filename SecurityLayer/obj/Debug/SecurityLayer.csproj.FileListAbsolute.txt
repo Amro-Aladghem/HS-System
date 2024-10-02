@@ -1,0 +1,12 @@
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\bin\Debug\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\bin\Debug\SecurityLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Debug\SecurityLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Debug\SecurityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Debug\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\SecurityLayer\obj\Debug\SecurityLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\bin\Debug\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\bin\Debug\SecurityLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\obj\Debug\SecurityLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\obj\Debug\SecurityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\obj\Debug\SecurityLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\SecurityLayer\obj\Debug\SecurityLayer.pdb

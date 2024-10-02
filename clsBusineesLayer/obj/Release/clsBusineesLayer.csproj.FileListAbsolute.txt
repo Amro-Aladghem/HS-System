@@ -1,0 +1,18 @@
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Release\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Release\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.CopyComplete
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Release\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Release\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.csproj.CopyComplete
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Release\clsBusineesLayer.pdb

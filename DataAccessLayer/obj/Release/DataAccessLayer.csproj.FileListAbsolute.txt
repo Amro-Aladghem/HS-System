@@ -1,0 +1,12 @@
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\bin\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Release\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\DataAccessLayer\obj\Release\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\bin\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Release\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Release\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\DataAccessLayer\obj\Release\DataAccessLayer.pdb

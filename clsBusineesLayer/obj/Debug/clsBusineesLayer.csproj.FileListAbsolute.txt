@@ -1,0 +1,27 @@
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Debug\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CopyComplete
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Debug\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CopyComplete
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\Simple hospital System\clsBusineesLayer\obj\Debug\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\bin\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\bin\Debug\clsBusineesLayer.pdb
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.AssemblyReference.cache
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\obj\Debug\clsBusineesLayer.csproj.CopyComplete
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\obj\Debug\clsBusineesLayer.dll
+C:\Users\Khaled\Desktop\HS System\clsBusineesLayer\obj\Debug\clsBusineesLayer.pdb
